@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Navigate to={'marvel'} />
+                element: <Navigate to={'marvel'} replace />
             },
             {
                 path: 'marvel',
