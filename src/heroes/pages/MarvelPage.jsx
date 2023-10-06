@@ -1,4 +1,3 @@
-// import { Navbar } from "../../ui/components/NavBar"
 
 export const MarvelPage = () => {
     return (
