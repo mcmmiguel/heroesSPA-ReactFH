@@ -1,8 +1,8 @@
-import { HeroesApp } from "../HeroesApp";
-import { LoginPage } from "../auth/pages/LoginPage";
-import { DCPage } from "../heroes/pages/DCPage";
-import { MarvelPage } from "../heroes/pages/MarvelPage";
 import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom';
+
+import { DCPage, MarvelPage } from "../heroes";
+import { HeroesApp } from "../HeroesApp";
+import { LoginPage } from "../auth";
 
 const router = createBrowserRouter([
     {
