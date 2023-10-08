@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom'
 import { DCPage, HeroPage, MarvelPage, SearchPage } from "../heroes";
 import { LoginPage } from "../auth";
 import { HeroesRoutes } from '../heroes/routes/HeroesRoutes';
+import { PrivateRoute } from './PrivateRoute';
 
 const router = createBrowserRouter([
     {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/*',
-        element: <HeroesRoutes />,
+        element: <PrivateRoute> <HeroesRoutes /> </PrivateRoute>,
         children: [
             {
                 index: true,
