@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const HeroCard = ({ hero }) => {
 
-    const heroImageUrl = `../../../assets/heroes/${hero.id}.jpg`;
+    const heroImageUrl = `/heroes/${hero.id}.jpg`;
 
     return (
         <div className="col mt-2">
