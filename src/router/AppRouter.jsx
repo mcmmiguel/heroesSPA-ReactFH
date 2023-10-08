@@ -8,7 +8,7 @@ import { PublicRoute } from './PublicRoute';
 
 const router = createBrowserRouter([
     {
-        path: 'login',
+        path: '/login',
         element: <PublicRoute> <LoginPage /> </PublicRoute>,
     },
     {
